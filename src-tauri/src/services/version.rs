@@ -16,6 +16,9 @@ pub fn make_version_hash(file_id: i64, system_prompt: &str, user_prompt: &str, t
     hasher.update(system_prompt.as_bytes());
     hasher.update(user_prompt.as_bytes());
     hasher.update(ts.as_bytes());
+    // Extra entropy avoids UNIQUE collisions when the same content is
+    // committed twice within the same timestamp resolution (e.g. rollback snapshot).
+    hasher.update(uuid::Uuid::new_v4().as_bytes());
     hex::encode(hasher.finalize())
 }
 

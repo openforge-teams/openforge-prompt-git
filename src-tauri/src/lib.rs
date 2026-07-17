@@ -6,6 +6,9 @@ mod llm;
 mod models;
 mod services;
 
+#[cfg(test)]
+mod integration_tests;
+
 use db::init_db;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]

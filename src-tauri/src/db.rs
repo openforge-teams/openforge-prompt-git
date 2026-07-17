@@ -212,3 +212,12 @@ fn seed_default_tags(conn: &Connection) -> AppResult<()> {
     )?;
     Ok(())
 }
+
+/// Open an in-memory database with full schema (for tests / local harness).
+pub fn open_memory_db() -> AppResult<Connection> {
+    let conn = Connection::open_in_memory()?;
+    conn.execute_batch("PRAGMA foreign_keys = ON;")?;
+    migrate(&conn)?;
+    seed_default_tags(&conn)?;
+    Ok(conn)
+}
