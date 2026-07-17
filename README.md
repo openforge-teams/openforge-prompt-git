@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.png" alt="Prompt Git mascot — a minimalist lavender and pink seahorse" width="148" />
+  <img src="docs/assets/logo.png" alt="Prompt Git mascot — a blue and pink seahorse" width="148" />
 </p>
 
 <h1 align="center">Prompt Git</h1>
