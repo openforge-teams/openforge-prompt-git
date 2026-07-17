@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1419;
+  --bg-elevated: #161d27;
+  --bg-panel: #1a2330;
+  --bg-hover: #243044;
+  --border: #2a3648;
+  --text: #e8eef7;
+  --text-muted: #8b9bb4;
+  --accent: #3d9cf0;
+  --accent-soft: rgba(61, 156, 240, 0.15);
+  --success: #3ecf8e;
+  --danger: #f07178;
+  --warning: #e6b450;
+  --editor: #0c1017;
+  --font-ui: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", Menlo, monospace;
+}
+
+[data-theme="light"] {
+  --bg: #f4f7fb;
+  --bg-elevated: #ffffff;
+  --bg-panel: #eef3f9;
+  --bg-hover: #e2eaf4;
+  --border: #d0dbe8;
+  --text: #1a2433;
+  --text-muted: #5c6b80;
+  --accent: #1d7fd1;
+  --accent-soft: rgba(29, 127, 209, 0.12);
+  --success: #1f9d63;
+  --danger: #d64545;
+  --warning: #c98a1a;
+  --editor: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: radial-gradient(1200px 600px at 10% -10%, #1a2a40 0%, var(--bg) 55%);
+  color: var(--text);
+  overflow: hidden;
+}
+
+[data-theme="light"] body,
+body:has([data-theme="light"]) {
+  background: radial-gradient(1200px 600px at 10% -10%, #dce8f6 0%, var(--bg) 55%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 8px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
