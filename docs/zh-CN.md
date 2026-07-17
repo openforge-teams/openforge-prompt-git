@@ -1,7 +1,7 @@
 # Prompt Git 中文说明
 
 <p align="center">
-  <img src="assets/logo.png" alt="Prompt Git 吉祥物：蓝粉海马 Logo" width="120" />
+  <img src="assets/logo.png" alt="Prompt Git 吉祥物：粉紫海马 Logo" width="120" />
 </p>
 
 Prompt Git 是面向 AI 开发者的本地桌面端 Prompt 版本管理与效果对比工具。完整英文说明见仓库根目录 [README.md](../README.md)。
