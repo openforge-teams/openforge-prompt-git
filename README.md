@@ -97,6 +97,34 @@ Prompt Git is deliberately small: a native desktop app that feels like **Git for
 
 ---
 
+## Screenshots
+
+### Editor — Prompt version control
+
+<p align="center">
+  <img src="docs/assets/screenshot-editor.png" alt="Prompt Git Editor View" width="800" />
+</p>
+
+### Compare — Multi-model evaluation
+
+<p align="center">
+  <img src="docs/assets/screenshot-compare.png" alt="Prompt Git Compare View" width="800" />
+</p>
+
+### Batch Test — Variable sweep
+
+<p align="center">
+  <img src="docs/assets/screenshot-batch.png" alt="Prompt Git Batch Test View" width="800" />
+</p>
+
+### Settings — Models, security, and preferences
+
+<p align="center">
+  <img src="docs/assets/screenshot-settings.png" alt="Prompt Git Settings View" width="800" />
+</p>
+
+---
+
 ## Quick Start
 
 ### Prerequisites
